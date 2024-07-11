@@ -2,11 +2,11 @@ export default class ScrollSuave {
   constructor(links, options) {
     this.linksInternos = document.querySelectorAll(links);
     if (options === undefined) {
-      this.options = { behavior: "smoth", block: "start" };
+      this.options = { behavior: "smooth", block: "start" };
     } else {
       this.options = options;
     }
-  this.scrollToSection = this.scrollToSection.bind(this)
+    this.scrollToSection = this.scrollToSection.bind(this);
   }
 
   scrollToSection(event) {
